@@ -11,3 +11,13 @@
   object-fit: cover;
   position: absolute;
 }
+
+.welcomeNote {
+  font-weight: 700;
+  font-size: 4rem;
+  /* padding-left: 4rem; */
+}
+
+.belowStatement {
+  font-size: 1.3rem;
+}

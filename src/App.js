@@ -13,8 +13,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/standard" element={<Premium />} />
-          <Route exact path="/premium" element={<Standard />} />
+          {/* <Route exact path="/room" element={<Room />} /> */}
+          {/* <Route exact path="/standard" element={<Premium />} /> */}
+          {/* <Route exact path="/premium" element={<Standard />} /> */}
         </Routes>
       </BrowserRouter>
     </div>
