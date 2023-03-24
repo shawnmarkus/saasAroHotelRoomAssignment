@@ -1,0 +1,108 @@
+[
+  {
+    "hotelType": "standard",
+    "price": "$45",
+    "imagePath": "src/assets/standard/1.jpg",
+    "bedrooms": "",
+    "rating": ""
+  },
+  {
+    "hotelType": "standard",
+    "price": "$55",
+    "imagePath": "src/assets/standard/2.jpg",
+    "bedrooms": "",
+    "rating": ""
+  },
+  {
+    "hotelType": "standard",
+    "price": "$35",
+    "imagePath": "src/assets/standard/3.jpg",
+    "bedrooms": "",
+    "rating": ""
+  },
+  {
+    "hotelType": "standard",
+    "price": "$45",
+    "imagePath": "src/assets/standard/4.jpg",
+    "bedrooms": "",
+    "rating": ""
+  },
+  {
+    "hotelType": "standard",
+    "price": "$89",
+    "imagePath": "src/assets/standard/5.jpg",
+    "bedrooms": "",
+    "rating": ""
+  },
+  {
+    "hotelType": "standard",
+    "price": "$99",
+    "imagePath": "src/assets/standard/6.jpg",
+    "bedrooms": "",
+    "rating": ""
+  },
+
+  {
+    "hotelType": "standard",
+    "price": "$47",
+    "imagePath": "src/assets/standard/7.jpg",
+    "bedrooms": "",
+    "rating": ""
+  },
+  {
+    "hotelType": "premium",
+    "price": "$145",
+    "imagePath": "src/assets/standard/1.jpg",
+    "bedrooms": "",
+    "rating": ""
+  },
+  {
+    "hotelType": "premium",
+    "price": "$178",
+    "imagePath": "src/assets/premium/2.jpg",
+    "bedrooms": "",
+    "rating": ""
+  },
+  {
+    "hotelType": "premium",
+    "price": "$190",
+    "imagePath": "src/assets/premium/3.jpg",
+    "bedrooms": "",
+    "rating": ""
+  },
+  {
+    "hotelType": "premium",
+    "price": "$145",
+    "imagePath": "src/assets/premium/4.jpg",
+    "bedrooms": "",
+    "rating": ""
+  },
+  {
+    "hotelType": "premium",
+    "price": "$280",
+    "imagePath": "src/assets/premium/5.jpg",
+    "bedrooms": "",
+    "rating": ""
+  },
+  {
+    "hotelType": "premium",
+    "price": "$200",
+    "imagePath": "src/assets/premium/6.jpg",
+    "bedrooms": "",
+    "rating": ""
+  },
+  {
+    "hotelType": "premium",
+    "price": "$250",
+    "imagePath": "src/assets/premium/7.jpg",
+    "bedrooms": "",
+    "rating": ""
+  },
+  {
+    "hotelType": "premium",
+    "price": "$220",
+    "imagePath": "src/assets/premium/8.jpg",
+    "bedrooms": "",
+    "rating": ""
+  }
+]
