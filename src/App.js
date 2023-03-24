@@ -1,22 +1,21 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Premium from "./Premium";
-import Standard from "./Standard";
-import Home from "./Home";
-import NavbarComp from "./NavBarComp";
+import Premium from "./Component/Premium";
+import Standard from "./Component/Standard";
+import Home from "./Component/Home";
+import NavbarComp from "./Component/NavBarComp";
+import "./global.css";
 
 function App() {
   return (
     <div className="App">
-      <NavbarComp />
+      <NavbarComp className="navbar" />
       <BrowserRouter>
-        <div className="container">
-          <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route exact path="/standard" element={<Premium />} />
-            <Route exact path="/premium" element={<Standard />} />
-          </Routes>
-        </div>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/standard" element={<Premium />} />
+          <Route exact path="/premium" element={<Standard />} />
+        </Routes>
       </BrowserRouter>
     </div>
   );
