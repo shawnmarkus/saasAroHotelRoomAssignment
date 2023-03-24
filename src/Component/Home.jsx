@@ -17,7 +17,14 @@ const Home = () => {
       >
         <h1 className={style.welcomeNote}>Welcome!</h1>
         <p className={style.belowStatement}>Find room of your choice</p>
-        <Button variant="light" className="btn" onClick={navigate("/room")}>
+        <Button
+          variant="light"
+          className="btn"
+          onClick={() => {
+            console.log("clicked");
+            navigate("/room");
+          }}
+        >
           Explore &nbsp; &#10145;
         </Button>
       </div>
