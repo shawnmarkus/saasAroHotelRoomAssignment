@@ -3,9 +3,13 @@ import Button from "react-bootstrap/Button";
 import axios from "axios";
 
 function CardComp({ data }) {
-  const addToCart = (data) => {
+  /*
+   *the data must contain the feilds like roomId, hotelType, imagePath, price
+   */
+  const addToCart = () => {
+    console.log("the data that will be sent", data);
     axios
-      .post("/user", data)
+      .post("/addtocart", data)
       .then(function (response) {
         console.log(response);
       })
@@ -23,7 +27,7 @@ function CardComp({ data }) {
             <b style={{ fontSize: "1.5rem" }}>Room</b>
           </Card.Title>
           <Card.Text>{data.des}</Card.Text>
-          <Button variant="primary" onClick={addToCart(data)}>
+          <Button variant="primary" onClick={() => addToCart()}>
             Add to Cart
           </Button>
         </Card.Body>
