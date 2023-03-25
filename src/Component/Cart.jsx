@@ -12,7 +12,7 @@ const Cart = () => {
   const [itemTosend, setItemToSend] = useState({});
   useEffect(() => {
     axios
-      .get("https://backendforhhotelbooking.onrender.com/getCartItem")
+      .get("/getCartItem")
       .then((responce) => {
         console.log("received data : ", responce.data.datalist[0].cart);
         setCartItemList(responce.data.datalist[0].cart);
