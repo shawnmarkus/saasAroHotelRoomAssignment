@@ -9,7 +9,7 @@ function CardComp({ data }) {
   const addToCart = () => {
     console.log("the data that will be sent", data);
     axios
-      .post("/addtocart", data)
+      .post("https://backendforhhotelbooking.onrender.com/addtocart", data)
       .then(function (response) {
         console.log(response);
       })

@@ -16,7 +16,7 @@ function FormToCollectData(props) {
     e.preventDefault();
     // console.log(userDetail);
     axios
-      .post("/booking", {
+      .post("https://backendforhhotelbooking.onrender.com/booking", {
         email: userDetail.email,
         phoneNo: userDetail.phoneNo,
         name: userDetail.name,
