@@ -9,7 +9,7 @@ const Premium = () => {
   return (
     <div className="p-2 m-2">
       <Container>
-        <Row xs={1} md={2} className="g-4">
+        <Row xs={1} md={2} xl={3} className="g-4">
           {dataSet.map((data, idx) => {
             if (data.hotelType === "premium") {
               return (
