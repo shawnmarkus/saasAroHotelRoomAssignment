@@ -9,8 +9,8 @@ import Cart from "./Component/Cart";
 function App() {
   return (
     <div className="App">
-      <NavbarComp className="navbar" />
       <BrowserRouter>
+        <NavbarComp className="navbar" />
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/room" element={<Room />} />
