@@ -6,6 +6,7 @@ const cartSchema = mongoose.Schema(
       type: [Object],
     },
   },
+
   { collection: "cart" }
 );
 
@@ -16,7 +17,7 @@ const bookingSchema = mongoose.Schema(
       required: "true",
     },
     roomId: {
-      type: mongoose.Schema.Types.ObjectId,
+      type: String,
       required: "true",
     },
   },
