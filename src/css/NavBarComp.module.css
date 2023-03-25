@@ -1,3 +1,7 @@
 .navbarTitle b {
   font-size: 2rem;
 }
+
+.cartIcon {
+  z-index: 200;
+}
