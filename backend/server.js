@@ -27,6 +27,30 @@ app.get("/", (req, res) => {
   res.send("you are welcome to hotel room booking api");
 });
 
+app.get("/getCartItem", (req, res) => {
+  try {
+    cartModel
+      .find({})
+      .then((datalist) => {
+        res.status(200).json({
+          status: "SUCCESS",
+          datalist,
+        });
+      })
+      .catch((e) => {
+        console.log("erro to retrive data", e);
+        res.status(500).json({
+          status: "UNABLE_TO_FETCH_DATA",
+        });
+      });
+  } catch (err) {
+    console.log("error to get the cartList");
+    res.status(500).json({
+      status: "UNABLE_TO_FETCH_DATA",
+    });
+  }
+});
+
 // add to cart
 app.post("/addtocart", (req, res) => {
   const { roomId, hotelType, imagePath, price } = req.body;
