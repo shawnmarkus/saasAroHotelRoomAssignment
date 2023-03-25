@@ -14,13 +14,6 @@ function FormToCollectData(props) {
   const navigate = useNavigate();
   const roomId = props.roomId;
 
-  // const handleChange = (e) => {
-  //   let updateItem = e.target.name;
-  //   const valueOfItem = userDetail[e.target.name] + e.target.value;
-  //   console.log(valueOfItem);
-  //   setUserDetail({ ...userDetail, updateItem: valueOfItem });
-  // };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     // console.log(userDetail);
