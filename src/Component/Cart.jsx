@@ -19,7 +19,7 @@ const Cart = () => {
       .catch((e) => {
         console.log("error occurred : ", e);
       });
-  }, []);
+  }, [cartItemList]);
 
   const bookTheRoom = (item) => {
     console.log(item);
@@ -35,7 +35,7 @@ const Cart = () => {
         <hr />
         {/* <div>{JSON.stringify(cartItemList.current)}</div> */}
         <div>
-          {cartItemList ? (
+          {cartItemList.len !== 0 ? (
             <div className="pb-4">
               {cartItemList.map((item, idx) => {
                 return (
@@ -46,7 +46,7 @@ const Cart = () => {
                   >
                     <Card.Img src={item.imagePath} className="w-25" />
                     <Card.Body>
-                      <Card.Title>Special title treatment</Card.Title>
+                      <Card.Title>{item.roomId}</Card.Title>
                       <Card.Text>
                         With supporting text below as a natural lead-in to
                         additional content.

@@ -41,7 +41,7 @@ function FormToCollectData(props) {
           phoneNo: "",
           address: "",
         });
-        navigate("/cart");
+        window.location.reload();
         props.closeModel();
       })
       .catch((e) => {
