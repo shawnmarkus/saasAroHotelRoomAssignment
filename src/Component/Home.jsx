@@ -10,7 +10,6 @@ const Home = () => {
   return (
     <div className={style.homePageMainContainer}>
       <Image src={HomeImage} fluid={true} className={style.homeImage} />
-      {/* home */}
       <div
         style={{ ...textContainerStyle }}
         className="d-flex flex-column justify-content-center"
