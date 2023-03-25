@@ -9,6 +9,7 @@ import ModelComp from "./ModelComp";
 const Cart = () => {
   const [cartItemList, setCartItemList] = useState([]);
   const [show, setShow] = useState(false);
+  const [itemTosend, setItemToSend] = useState({});
   useEffect(() => {
     axios
       .get("/getCartItem")
@@ -19,11 +20,12 @@ const Cart = () => {
       .catch((e) => {
         console.log("error occurred : ", e);
       });
-  }, [cartItemList]);
+  }, []);
 
   const bookTheRoom = (item) => {
     console.log(item);
     setShow(true);
+    setItemToSend(item);
   };
 
   return (
@@ -63,7 +65,7 @@ const Cart = () => {
                       {show ? (
                         <ModelComp
                           show={show}
-                          item={item}
+                          item={itemTosend}
                           setShow={(state) => setShow(state)}
                         />
                       ) : null}
