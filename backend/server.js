@@ -22,10 +22,26 @@ app.use(
   })
 );
 
+// just a get request
+app.get("/", (req, res) => {
+  res.send("you are welcome to hotel room booking api");
+});
+
+// add to cart
 app.post("/addtocart", (req, res) => {
-  if (req.body !== null) {
+  const { roomId, hotelType, imagePath, price } = req.body;
+  if (roomId && hotelType && imagePath && price) {
     cartModel
-      .create(req.body)
+      .findOneAndUpdate(
+        {},
+        {
+          $push: { cart: { roomId, hotelType, imagePath, price } },
+        },
+        {
+          upsert: true,
+          new: true,
+        }
+      )
       .then((data) => {
         console.log("data is created in db successfully", data);
         res.status(200).json({
@@ -41,12 +57,76 @@ app.post("/addtocart", (req, res) => {
       });
   } else {
     res.status(400).json({
-      status: "Content is not send",
+      status: "NEED_DATA",
     });
   }
 });
-app.post("/booking", (req, res) => {});
 
+// added booking
+/*
+    1.the req.body will contain the object id of the entry in the cart and that will be used to removed from cart collection.
+    2.the user detail will be added with the room id 
+*/
+app.post("/booking", async (req, res) => {
+  const { roomId, email, name, phoneNo, address } = req.body;
+
+  //   var deletedData;
+  if (roomId && email && name && phoneNo && address) {
+    console.log("room id that is provided", roomId);
+    let deletedData = await cartModel
+      .findOneAndUpdate(
+        {},
+        { $pull: { cart: { roomId: roomId } } },
+        {
+          new: true,
+        }
+      )
+      .catch((e) => {
+        console.log("the error occured at deletion of item from cart: ", e);
+        res.status(500).json({
+          status: "FAILED",
+        });
+      });
+
+    if (deletedData) {
+      console.log(`data has been removed from db  ${deletedData}`);
+
+      bookingModel
+        .create({ roomId, userDetail: { email, name, phoneNo, address } })
+        .then((data) => {
+          console.log(
+            `booking has been registered against corresponding detail \n{ ${data} } \n`
+          );
+
+          res.status(200).json({
+            roomId,
+            email,
+            phoneNo,
+            address,
+            name,
+            deletedData,
+            status: "SUCCESS",
+          });
+        })
+        .catch((e) => {
+          console.log("the error occured at booking", e);
+          res.status(500).json({
+            status: "FAILED",
+          });
+        });
+    } else {
+      res.status(400).json({
+        status: "NO_SUCH_ENTRY",
+      });
+    }
+  } else {
+    res.status(400).json({
+      status: "NEED_DATA",
+    });
+  }
+});
+
+// port to listen
 app.listen(process.env.PORT, (error) => {
   if (error) {
     console.log(`failed to listen because ${error}`);
