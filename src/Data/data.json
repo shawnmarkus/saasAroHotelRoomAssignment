@@ -2,107 +2,107 @@
   {
     "hotelType": "standard",
     "price": "$45",
-    "imagePath": "src/assets/standard/1.jpg",
+    "imagePath": "https://images.pexels.com/photos/271619/pexels-photo-271619.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "bedrooms": "",
-    "rating": ""
+    "des": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime velit quibusdam sapiente illo ipsa tempore. Voluptates eveniet cupiditate expedita pariatur."
   },
   {
     "hotelType": "standard",
     "price": "$55",
-    "imagePath": "src/assets/standard/2.jpg",
+    "imagePath": "https://images.pexels.com/photos/2736388/pexels-photo-2736388.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "bedrooms": "",
-    "rating": ""
+    "des": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime velit quibusdam sapiente illo ipsa tempore. Voluptates eveniet cupiditate expedita pariatur."
   },
   {
     "hotelType": "standard",
     "price": "$35",
-    "imagePath": "src/assets/standard/3.jpg",
+    "imagePath": "https://images.pexels.com/photos/172872/pexels-photo-172872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "bedrooms": "",
-    "rating": ""
+    "des": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime velit quibusdam sapiente illo ipsa tempore. Voluptates eveniet cupiditate expedita pariatur."
   },
   {
     "hotelType": "standard",
     "price": "$45",
-    "imagePath": "src/assets/standard/4.jpg",
+    "imagePath": "https://images.pexels.com/photos/279746/pexels-photo-279746.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "bedrooms": "",
-    "rating": ""
+    "des": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime velit quibusdam sapiente illo ipsa tempore. Voluptates eveniet cupiditate expedita pariatur."
   },
   {
     "hotelType": "standard",
     "price": "$89",
-    "imagePath": "src/assets/standard/5.jpg",
+    "imagePath": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     "bedrooms": "",
-    "rating": ""
+    "des": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime velit quibusdam sapiente illo ipsa tempore. Voluptates eveniet cupiditate expedita pariatur."
   },
   {
     "hotelType": "standard",
     "price": "$99",
-    "imagePath": "src/assets/standard/6.jpg",
+    "imagePath": "https://plus.unsplash.com/premium_photo-1678297269980-16f4be3a15a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     "bedrooms": "",
-    "rating": ""
+    "des": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime velit quibusdam sapiente illo ipsa tempore. Voluptates eveniet cupiditate expedita pariatur."
   },
 
   {
     "hotelType": "standard",
     "price": "$47",
-    "imagePath": "src/assets/standard/7.jpg",
+    "imagePath": "https://images.unsplash.com/photo-1587874522487-fe10e954d035?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
     "bedrooms": "",
-    "rating": ""
+    "des": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime velit quibusdam sapiente illo ipsa tempore. Voluptates eveniet cupiditate expedita pariatur."
   },
   {
     "hotelType": "premium",
     "price": "$145",
-    "imagePath": "src/assets/standard/1.jpg",
+    "imagePath": "https://images.pexels.com/photos/97083/pexels-photo-97083.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "bedrooms": "",
-    "rating": ""
+    "des": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime velit quibusdam sapiente illo ipsa tempore. Voluptates eveniet cupiditate expedita pariatur."
   },
   {
     "hotelType": "premium",
     "price": "$178",
-    "imagePath": "src/assets/premium/2.jpg",
+    "imagePath": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
     "bedrooms": "",
-    "rating": ""
+    "des": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime velit quibusdam sapiente illo ipsa tempore. Voluptates eveniet cupiditate expedita pariatur."
   },
   {
     "hotelType": "premium",
     "price": "$190",
-    "imagePath": "src/assets/premium/3.jpg",
+    "imagePath": "https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
     "bedrooms": "",
-    "rating": ""
+    "des": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime velit quibusdam sapiente illo ipsa tempore. Voluptates eveniet cupiditate expedita pariatur."
   },
   {
     "hotelType": "premium",
     "price": "$145",
-    "imagePath": "src/assets/premium/4.jpg",
+    "imagePath": "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     "bedrooms": "",
-    "rating": ""
+    "des": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime velit quibusdam sapiente illo ipsa tempore. Voluptates eveniet cupiditate expedita pariatur."
   },
   {
     "hotelType": "premium",
     "price": "$280",
-    "imagePath": "src/assets/premium/5.jpg",
+    "imagePath": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     "bedrooms": "",
-    "rating": ""
+    "des": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime velit quibusdam sapiente illo ipsa tempore. Voluptates eveniet cupiditate expedita pariatur."
   },
   {
     "hotelType": "premium",
     "price": "$200",
-    "imagePath": "src/assets/premium/6.jpg",
+    "imagePath": "https://images.unsplash.com/photo-1521783988139-89397d761dce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80",
     "bedrooms": "",
-    "rating": ""
+    "des": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime velit quibusdam sapiente illo ipsa tempore. Voluptates eveniet cupiditate expedita pariatur."
   },
   {
     "hotelType": "premium",
     "price": "$250",
-    "imagePath": "src/assets/premium/7.jpg",
+    "imagePath": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     "bedrooms": "",
-    "rating": ""
+    "des": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime velit quibusdam sapiente illo ipsa tempore. Voluptates eveniet cupiditate expedita pariatur."
   },
   {
     "hotelType": "premium",
     "price": "$220",
-    "imagePath": "src/assets/premium/8.jpg",
+    "imagePath": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
     "bedrooms": "",
-    "rating": ""
+    "des": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime velit quibusdam sapiente illo ipsa tempore. Voluptates eveniet cupiditate expedita pariatur."
   }
 ]
