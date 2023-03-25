@@ -19,3 +19,18 @@ body {
 .btn {
   width: fit-content;
 }
+
+.card:hover {
+  box-shadow: 0 0 10px 10px rgba(104, 104, 104, 0.176);
+  transition: ease box-shadow 0.2s;
+}
+
+.cardHover {
+  height: 300px;
+  transform: scale(1);
+}
+
+.cardHover:hover {
+  transform: scale(1.02);
+  transition: ease-in-out transform 0.2s;
+}
