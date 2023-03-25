@@ -4,6 +4,7 @@ import Home from "./Component/Home";
 import NavbarComp from "./Component/NavBarComp";
 import "./global.css";
 import Room from "./Component/Room";
+import Cart from "./Component/Cart";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/room" element={<Room />} />
+          <Route exact path="/cart" element={<Cart />} />
         </Routes>
       </BrowserRouter>
     </div>
