@@ -2,7 +2,6 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import React, { useState } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
 
 function FormToCollectData(props) {
   const [userDetail, setUserDetail] = useState({
@@ -11,7 +10,6 @@ function FormToCollectData(props) {
     phoneNo: "",
     address: "",
   });
-  const navigate = useNavigate();
   const roomId = props.roomId;
 
   const handleSubmit = (e) => {
