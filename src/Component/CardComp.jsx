@@ -1,26 +1,34 @@
 import Card from "react-bootstrap/Card";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
+import Button from "react-bootstrap/Button";
+import axios from "axios";
 
-function CardComp() {
+function CardComp({ data }) {
+  const addToCart = (data) => {
+    axios
+      .post("/user", data)
+      .then(function (response) {
+        console.log(response);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  };
   return (
-    <Row xs={1} md={2} className="g-4">
-      {Array.from({ length: 4 }).map((_, idx) => (
-        <Col>
-          <Card>
-            <Card.Img variant="top" src="holder.js/100px160" />
-            <Card.Body>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-      ))}
-    </Row>
+    <Card className="card">
+      <Card.Img variant="top" src={data.imagePath} className="cardHover" />
+
+      <Card.Body>
+        <Card.Body>
+          <Card.Title>
+            <b style={{ fontSize: "1.5rem" }}>Room</b>
+          </Card.Title>
+          <Card.Text>{data.des}</Card.Text>
+          <Button variant="primary" onClick={addToCart(data)}>
+            Add to Cart
+          </Button>
+        </Card.Body>
+      </Card.Body>
+    </Card>
   );
 }
 
